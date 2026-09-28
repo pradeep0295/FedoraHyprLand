@@ -1,0 +1,2 @@
+-- UWSM owns graphical-session environment variables in ~/.config/uwsm/env.
+-- Keep compositor-specific environment additions here only when needed.

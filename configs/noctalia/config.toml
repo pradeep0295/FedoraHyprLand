@@ -1,0 +1,103 @@
+[theme]
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "m3-tonal-spot"
+
+[theme.templates]
+enable_builtin_templates = true
+enable_community_templates = false
+builtin_ids = ["gtk3", "gtk4", "kcolorscheme", "kitty", "qt"]
+community_ids = []
+
+[shell]
+font_family = "Lexend"
+launch_apps_as_systemd_services = true
+polkit_agent = true
+settings_show_advanced = true
+
+[shell.animation]
+enabled = true
+speed = 1.0
+
+[shell.shadow]
+direction = "down"
+alpha = 0.48
+
+[shell.panel]
+transparency_mode = "glass"
+borders = true
+shadow = true
+launcher_placement = "floating"
+launcher_position = "center"
+control_center_placement = "floating"
+control_center_position = "center"
+session_placement = "floating"
+session_position = "center"
+
+[shell.launcher]
+categories = true
+show_icons = true
+show_app_origin_indicator = true
+sort_by_usage = true
+app_grid = false
+provider_prefix = "/"
+
+[shell.window_switcher]
+style = "carousel"
+mru = true
+show_caption = true
+show_count = true
+show_app_icon = true
+show_all_outputs = true
+current_workspace_only = false
+
+[bar.default]
+position = "top"
+enabled = true
+reserve_space = true
+layer = "top"
+thickness = 38
+margin_ends = 12
+margin_edge = 8
+background_opacity = 0.94
+radius = 12
+capsule = true
+capsule_fill = "surface_variant"
+capsule_opacity = 0.88
+capsule_border = "outline"
+widget_spacing = 8
+start = ["launcher", "wallpaper", "workspaces"]
+center = ["active_window", "clock"]
+end = ["media", "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "control-center", "session"]
+
+[widget.clock]
+format = "{:%H:%M}"
+tooltip_format = "{:%A, %B %d, %Y}"
+color = "secondary"
+
+[widget.launcher]
+glyph = "search"
+
+[widget.notifications]
+hide_when_no_unread = true
+
+[widget.workspaces]
+style = "regular"
+show_labels = false
+pill_scale = 1.0
+active_pill_size = 2.4
+inactive_pill_size = 0.9
+focused_color = "primary"
+occupied_color = "secondary"
+empty_color = "surface_variant"
+hide_when_empty = false
+
+[accessibility]
+ui_scale = 1.15
+
+[wallpaper]
+enabled = true
+fill_mode = "crop"
+fill_color = "surface"
+transition = ["fade", "wipe", "disc", "zoom"]
+transition_duration = 1200
